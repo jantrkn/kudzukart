@@ -411,7 +411,7 @@
                             Hand-Pressed Onigiri &amp; Lunch Boxes
                         </h2>
                         <p class="text-sm sm:text-base text-maroon/80 mt-2 max-w-2xl">
-                            Every triangle is formed to order with seasoned Japanese short-grain rice, toasted nori, and house-made fillings. All items are <strong>100% Plant-Based &amp; Gluten-Free</strong>.
+                            Every onigiri is formed with seasoned Japanese short-grain rice, toasted nori, and house-made fillings. All items are <strong>100% Plant-Based &amp; Gluten-Free</strong>.
                         </p>
                     </div>
 
@@ -435,6 +435,9 @@
                         </button>
                         <button type="button" data-filter="soy-free" class="filter-btn font-mono text-xs px-3 py-1.5 rounded-lg border border-maroon/30 bg-paper text-maroon hover:border-maroon transition-colors">
                             Soy-Free Only
+                        </button>
+                        <button type="button" data-filter="nut-free" class="filter-btn font-mono text-xs px-3 py-1.5 rounded-lg border border-maroon/30 bg-paper text-maroon hover:border-maroon transition-colors">
+                            Nut-Free Only
                         </button>
                         <button type="button" data-filter="sesame-free" class="filter-btn font-mono text-xs px-3 py-1.5 rounded-lg border border-maroon/30 bg-paper text-maroon hover:border-maroon transition-colors">
                             Sesame-Free Only
@@ -482,11 +485,11 @@
                                             <span class="font-mono font-bold text-2xl text-robin">$11</span>
                                         </div>
                                         <p class="text-xs sm:text-sm text-butter/85 mt-2 leading-relaxed">
-                                            Any <strong>2 onigiri</strong> of your choice paired with a <strong>chilled canned drink</strong> and house pickled cucumber sunomono.
+                                            Any <strong>2 onigiri</strong> of your choice paired with a <strong>chilled canned drink</strong>. 
                                         </p>
                                     </div>
                                     <div class="mt-4 pt-3 border-t border-butter/15 font-mono text-[11px] text-robin/90">
-                                        +$1 if selecting Faux-Strami or Yuzu Spindrift
+                                        +$1 if selecting Faux-Strami
                                     </div>
                                 </div>
 
@@ -498,11 +501,11 @@
                                             <span class="font-mono font-bold text-2xl text-maroon">$14</span>
                                         </div>
                                         <p class="text-xs sm:text-sm text-maroon/85 mt-2 leading-relaxed">
-                                            Pick <strong>any 3 onigiri</strong> across the entire menu—including Faux-Strami—packed in a compostable bento box.
+                                            Pick <strong>any 3 onigiri</strong> across the entire menu—including Faux-Strami.
                                         </p>
                                     </div>
                                     <div class="mt-4 pt-3 border-t border-maroon/15 font-mono text-[11px] font-semibold text-maroon">
-                                        Save up to $2 • Mix &amp; Match
+                                        Save up to $4 • Mix &amp; Match
                                     </div>
                                 </div>
                             </div>
@@ -548,7 +551,7 @@
                                 <li class="p-3.5 rounded-xl bg-paper border border-maroon/20 flex items-center justify-between gap-3">
                                     <div>
                                         <span class="font-display font-bold text-base text-maroon block">Barq's Root Beer</span>
-                                        <span class="font-mono text-[11px] text-maroon/70">Classic crisp bite • GF / Vegan</span>
+                                        <span class="font-mono text-[11px] text-maroon/70">Classic crisp bite from Mississippi • GF / Vegan</span>
                                     </div>
                                     <span class="font-mono font-bold text-base px-2.5 py-1 rounded bg-butter border border-maroon/20">$2</span>
                                 </li>
@@ -557,7 +560,7 @@
                                 <li class="p-3.5 rounded-xl bg-paper border border-maroon/20 flex items-center justify-between gap-3">
                                     <div>
                                         <span class="font-display font-bold text-base text-maroon block">Yuzu Spindrift</span>
-                                        <span class="font-mono text-[11px] text-maroon/70">Sparkling water + real squeezed yuzu • GF / Vegan</span>
+                                        <span class="font-mono text-[11px] text-maroon/70">Sparkling water + mandarin yuzu • GF / Vegan</span>
                                     </div>
                                     <span class="font-mono font-bold text-base px-2.5 py-1 rounded bg-robin border border-maroon/20">$3</span>
                                 </li>
@@ -751,9 +754,10 @@
                     price: 6,
                     featured: true,
                     tagline: 'Deli-spiced smoked beet & shiitake pastrami',
-                    description: 'House-cured, hickory-smoked ruby beet and shiitake ribbons layered with whole-grain mustard aioli, dill pickle brine, and toasted caraway in warm sushi rice.',
+                    description: 'Roasted shredded king oyster mushrooms seasoned with cracked coriander, black pepper, and smoked paprika, tossed with a tangy Carolina-style mustard and white miso glaze wrapped in nori.',
                     allergens: ['Mustard', 'Soy (GF Tamari)', 'Sesame'],
                     soyFree: false,
+                    nutFree: true,
                     sesameFree: false,
                     prepNote: '100% Gluten-Free & Plant-Based'
                 },
@@ -762,10 +766,11 @@
                     name: 'Mississippi Miso',
                     price: 5,
                     featured: false,
-                    tagline: 'Sorghum-glazed white miso & charred scallion',
-                    description: 'Savory chickpea-and-soy white miso whipped with sweet Southern sorghum syrup, roasted garlic, and blistered green onions.',
+                    tagline: 'Smoky Collard & miso black-eyed peas',
+                    description: ' Slow-simmered collard greens and black-eyed peas glazed with red miso, apple cider vinegar, and smoked paprika. Pan seared and served without nori',
                     allergens: ['Soy (GF Miso)', 'Sesame'],
                     soyFree: false,
+                    nutFree: true,
                     sesameFree: false,
                     prepNote: '100% Gluten-Free & Plant-Based'
                 },
@@ -774,10 +779,11 @@
                     name: 'Gold Rush Beet',
                     price: 5,
                     featured: false,
-                    tagline: 'Roasted Colorado golden beets & yuzu-herb whip',
-                    description: 'Salt-roasted Front Range golden beets folded into creamy sunflower-seed yuzu crema, fresh dill, and cracked black pepper.',
+                    tagline: 'Roasted Colorado golden beets & wasabi-dill aioli',
+                    description: 'Salt-roasted golden beets finely diced and folded into a creamy wasabi dill vegan aioli wrapped in nori.',
                     allergens: ['None (Top-9 Allergen Free)'],
                     soyFree: true,
+                    nutFree: true,
                     sesameFree: true,
                     prepNote: '100% Gluten-Free, Soy-Free, Nut-Free & Plant-Based'
                 },
@@ -786,10 +792,11 @@
                     name: "Jack's Cookout",
                     price: 5,
                     featured: false,
-                    tagline: 'Smoky espresso-molasses pulled jackfruit',
-                    description: 'Slow-braised young green jackfruit tossed in house tangy tomato-molasses BBQ sauce with crisp apple-cabbage slaw.',
+                    tagline: 'Smoky bbq jackfruit',
+                    description: 'Slow-braised young green jackfruit tossed in house tangy tomato-molasses BBQ sauce with a crisp sesame ginger slaw (cabbage, white miso, ginger, scallions) wrapped in nori.',
                     allergens: ['Mustard'],
                     soyFree: true,
+                    nutFree: true,
                     sesameFree: true,
                     prepNote: '100% Gluten-Free, Soy-Free & Plant-Based'
                 },
@@ -798,10 +805,11 @@
                     name: 'Sweetheart Tofu',
                     price: 5,
                     featured: false,
-                    tagline: 'Crispy chili-maple glazed organic tofu',
-                    description: 'Golden-seared non-GMO tofu cubes glazed in warm Colorado wildflower-style maple chili crisp and toasted black sesame.',
-                    allergens: ['Soy', 'Sesame'],
+                    tagline: 'Sweet tea & tamari smokey tofu',
+                    description: 'Pressed, smokey tofu braised in a reduction of black tea, gluten-free tamari, sorghum syrup, and fresh ginger. Made with brown sugar rice, encrusted with candied georgia pecans, and served without nori.',
+                    allergens: ['Soy', 'Sesame' , 'Tree Nuts'],
                     soyFree: false,
+                    nutFree: false,
                     sesameFree: false,
                     prepNote: '100% Gluten-Free & Plant-Based'
                 }
@@ -885,6 +893,7 @@
 
                 const filteredItems = ONIGIRI_MENU.filter(item => {
                     if (currentFilter === 'soy-free') return item.soyFree;
+                    if (currentFilter === 'nut-free') return item.nutFree;
                     if (currentFilter === 'sesame-free') return item.sesameFree;
                     return true;
                 });
