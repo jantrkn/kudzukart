@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kudzu Kart | Plant-Based &amp; Gluten-Free Fusion Onigiri — Englewood, CO</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Architectural Google Fonts: Space Grotesk, Plus Jakarta Sans, and JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Configure Tailwind Custom Architectural Palette & Typography -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        maroon: {
+                            DEFAULT: '#591C21',
+                            dark: '#3F1216',
+                            light: '#78282F',
+                            muted: '#8C4349'
+                        },
+                        butter: {
+                            DEFAULT: '#EDE6B9',
+                            light: '#F6F2DA',
+                            dark: '#DCD296',
+                            soft: '#FAF8EC'
+                        },
+                        robin: {
+                            DEFAULT: '#B0C0DE',
+                            light: '#D9E1F0',
+                            dark: '#8FA4CC',
+                            muted: '#C7D3E8'
+                        },
+                        ink: '#241416',
+                        paper: '#FAF7F0'
+                    },
+                    fontFamily: {
+                        display: ['"Space Grotesk"', 'sans-serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Architectural minimalist structural utilities */
+        body {
+            background-color: #FAF7F0;
+            color: #591C21;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Subtle architectural drafting grid background */
+        .bg-drafting-grid {
+            background-size: 32px 32px;
+            background-image: 
+                linear-gradient(to right, rgba(89, 28, 33, 0.045) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(89, 28, 33, 0.045) 1px, transparent 1px);
+        }
+
+        /* Crisp architectural offset shadow */
+        .arch-shadow {
+            box-shadow: 4px 4px 0px 0px #591C21;
+        }
+        .arch-shadow-sm {
+            box-shadow: 2px 2px 0px 0px #591C21;
+        }
+        .arch-shadow-robin {
+            box-shadow: 4px 4px 0px 0px #8FA4CC;
+        }
+
+        /* Pulse animation for live market status indicator */
+        @keyframes livePulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.45; transform: scale(1.25); }
+        }
+        .animate-live-dot {
+            animation: livePulse 2.2s infinite ease-in-out;
+        }
+
+        /* Smooth transitions for interactive allergen drawers */
+        .allergen-drawer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.28s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.22s ease;
+            opacity: 0;
+        }
+        .allergen-drawer.open {
+            max-height: 180px;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-paper text-maroon selection:bg-robin selection:text-maroon overflow-x-hidden">
+
+    <!-- Top Navigation Bar (Sticky, Architectural Border) -->
+    <header class="sticky top-0 z-40 bg-paper/95 backdrop-blur-sm border-b border-maroon/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+            <!-- Brand Wordmark & KudzuKartLogo_2.svg Emblem -->
+            <a href="#" class="flex items-center gap-3 group focus:outline-none">
+                <div class="w-11 h-11 rounded-full overflow-hidden flex items-center justify-center transition-transform duration-200 group-hover:-translate-y-0.5 shrink-0">
+                    <!-- Inline SVG Recreation of KudzuKartLogo_2.svg -->
+                    <svg viewBox="0 0 240 240" class="w-full h-full" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kudzu Kart Logo">
+                        <!-- Robin's Egg Blue Circle with Maroon Outer Ring -->
+                        <circle cx="120" cy="120" r="113" fill="#B0C0DE" stroke="#8E3B58" stroke-width="7"/>
+                        
+                        <!-- Hand-Drawn Maroon Typography: KUDZU (Top Arc) -->
+                        <g stroke="#8E3B58" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                            <!-- K -->
+                            <path d="M32 76 L51 96 M40 85 L44 63 M41 84 L63 81"/>
+                            <!-- U -->
+                            <path d="M65 46 C67 62, 79 68, 89 58 C95 52, 92 39, 87 30"/>
+                            <!-- D -->
+                            <path d="M113 21 L115 51 M113 21 C133 19, 141 35, 115 51"/>
+                            <!-- Z -->
+                            <path d="M155 29 L183 41 L153 56 L179 68"/>
+                            <!-- U -->
+                            <path d="M201 70 C186 78, 181 89, 188 97 C195 104, 206 99, 216 93"/>
+                        </g>
+
+                        <!-- Central Hand-Drawn Character Logo-->
+                        <g stroke="#8E3B58" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                            <!-- Hairs / Ears -->
+                            <path d="M104 74 L116 96"/>
+                            <path d="M126 68 L130 104"/>
+                            <!-- Snout & Head Outline -->
+                            <path d="M84 104 L106 104 L127 91 L130 144 C130 164, 114 174, 104 168 C96 164, 98 148, 98 134 L84 136 C78 137, 78 132, 84 126 L104 104"/>
+                            <!-- Right Handle / Ear Loop -->
+                            <path d="M130 112 C156 108, 166 136, 132 148"/>
+                            <!-- Closed Sleeping Eye -->
+                            <path d="M111 117 C110 124, 116 125, 118 119" stroke-width="3.5"/>
+                        </g>
+
+                        <!-- Hand-Drawn Maroon Typography: KART (Bottom Arc) -->
+                        <g stroke="#8E3B58" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                            <!-- K -->
+                            <path d="M62 164 L47 187 M56 174 L78 180 M60 176 L58 197"/>
+                            <!-- A -->
+                            <path d="M84 209 L103 187 L107 214 M91 202 L105 204"/>
+                            <!-- R -->
+                            <path d="M126 190 L134 216 M126 190 C143 184, 150 196, 132 203 L149 212"/>
+                            <!-- T -->
+                            <path d="M158 176 L181 161 M170 169 L185 192"/>
+                        </g>
+                    </svg>
+                </div>
+                <div>
+                    <span class="font-display font-bold text-lg tracking-tight uppercase block leading-none">Kudzu Kart</span>
+                    <span class="font-mono text-[10px] tracking-widest uppercase text-maroon/70 block mt-0.5">Englewood, CO</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav aria-label="Primary Navigation" class="hidden md:flex items-center gap-8 font-mono text-xs uppercase tracking-wider">
+                <a href="#menu" class="hover:text-maroon-light transition-colors py-1 border-b border-transparent hover:border-maroon">Menu &amp; Combos</a>
+                <a href="#schedule" class="hover:text-maroon-light transition-colors py-1 border-b border-transparent hover:border-maroon">Market Schedule</a>
+                <a href="#about" class="hover:text-maroon-light transition-colors py-1 border-b border-transparent hover:border-maroon">Story &amp; Catering</a>
+            </nav>
+
+            <!-- Quick Action Jump Button -->
+            <div class="flex items-center gap-2">
+                <a href="#schedule" class="font-mono text-xs uppercase tracking-wider px-3.5 py-2 rounded-lg bg-robin text-maroon font-semibold border border-maroon hover:bg-robin-dark transition-colors">
+                    Find Kart
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- =====================================================================
+             1. HERO SECTION & 'FIND THE KART' LIVE STATUS BANNER
+        ====================================================================== -->
+        <section class="bg-drafting-grid border-b border-maroon/20 pt-8 pb-14 sm:pt-14 sm:pb-20">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                
+                <!-- Prominent 'Find the Kart' Live Status Banner -->
+                <div id="live-status-banner" class="mb-10 sm:mb-12 rounded-xl bg-robin border border-maroon p-4 sm:p-5 arch-shadow transition-all">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                        <div class="flex items-start sm:items-center gap-3.5">
+                            <span class="mt-1 sm:mt-0 flex h-3.5 w-3.5 relative shrink-0" aria-hidden="true">
+                                <span id="status-dot" class="animate-live-dot inline-flex rounded-full h-3.5 w-3.5 bg-maroon"></span>
+                            </span>
+                            <div>
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <span class="font-mono text-[11px] font-semibold uppercase tracking-widest px-2 py-0.5 rounded bg-maroon text-butter">
+                                        Find the Kart
+                                    </span>
+                                    <span id="status-day-label" class="font-mono text-xs font-medium text-maroon/80 uppercase tracking-wider">
+                                        Today's Dispatch
+                                    </span>
+                                </div>
+                                <p id="status-location-text" class="font-display font-bold text-base sm:text-lg text-maroon mt-1 leading-snug">
+                                    Loading Englewood e-bike route...
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between md:justify-end gap-4 pt-3 md:pt-0 border-t md:border-t-0 border-maroon/15">
+                            <div class="text-left md:text-right">
+                                <span class="font-mono text-[10px] uppercase tracking-widest text-maroon/70 block">Service Hours</span>
+                                <span id="status-hours-text" class="font-mono text-xs sm:text-sm font-semibold text-maroon">
+                                    11:00 AM – 2:30 PM
+                                </span>
+                            </div>
+                            <a href="#schedule" class="shrink-0 inline-flex items-center gap-1.5 font-mono text-xs uppercase tracking-wider px-3 py-2 rounded-lg bg-paper text-maroon border border-maroon hover:bg-butter transition-colors">
+                                <span>Week View</span>
+                                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Architectural Asymmetric Hero Grid -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+                    <!-- Left Column: Brand Identity & Tagline -->
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="inline-flex flex-wrap items-center gap-2 font-mono text-xs uppercase tracking-widest text-maroon/80 bg-butter/80 border border-maroon/20 px-3 py-1.5 rounded-lg">
+                            <span>Zero-Emission E-Bike Food Cart</span>
+                            <span aria-hidden="true">•</span>
+                            <span>Englewood, Colorado</span>
+                        </div>
+
+                        <h1 class="font-display font-bold text-4xl sm:text-6xl lg:text-[64px] tracking-tight text-maroon leading-[1.03]">
+                            Kudzu Kart
+                        </h1>
+
+                        <p class="font-display text-xl sm:text-2xl text-maroon/90 font-medium leading-snug max-w-2xl">
+                            Architectural, hand-pressed fusion onigiri. 100% plant-based, 100% gluten-free, and towed pedal-assisted through the Front Range.
+                        </p>
+
+                        <p class="text-sm sm:text-base text-maroon/80 leading-relaxed max-w-xl">
+                            Warm short-grain sushi rice wrapped in crisp roasted nori, filled with bold Southern-meets-Japanese comfort flavors—from house-smoked beet pastrami to sweet sorghum miso.
+                        </p>
+
+                        <!-- Dietary Guarantee Badges -->
+                        <div class="flex flex-wrap items-center gap-3 pt-1">
+                            <span class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-maroon text-butter font-mono text-xs uppercase tracking-wider">
+                                <svg class="w-4 h-4 text-robin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                100% Plant-Based
+                            </span>
+                            <span class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-butter border border-maroon text-maroon font-mono text-xs font-semibold uppercase tracking-wider">
+                                <svg class="w-4 h-4 text-maroon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                100% Gluten-Free Kitchen
+                            </span>
+                        </div>
+
+                        <!-- Primary Hero Actions -->
+                        <div class="flex flex-wrap items-center gap-3 pt-2">
+                            <a href="#menu" class="px-6 py-3.5 rounded-xl bg-maroon text-butter font-mono text-xs sm:text-sm uppercase tracking-wider font-semibold border border-maroon hover:bg-maroon-dark transition-all arch-shadow-sm">
+                                Explore Onigiri &amp; Combos
+                            </a>
+                            <a href="#about" class="px-6 py-3.5 rounded-xl bg-paper text-maroon font-mono text-xs sm:text-sm uppercase tracking-wider font-semibold border border-maroon hover:bg-butter transition-colors">
+                                Book the E-Bike Cart
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Architectural Elevation Blueprint Card of the E-Bike Cart -->
+                    <div class="lg:col-span-5">
+                        <div class="rounded-2xl bg-butter border border-maroon p-5 sm:p-6 arch-shadow">
+                            <div class="flex items-center justify-between border-b border-maroon/20 pb-3 mb-4 font-mono text-[11px] uppercase tracking-widest text-maroon/75">
+                                <span>SPEC // RAD RUNNER 2</span>
+                                <span>ENGLEWOOD, CO</span>
+                            </div>
+                            
+                            <!-- Custom Architectural Line-Art SVG Illustration of E-Bike & Food Cart -->
+                            <div class="bg-paper rounded-xl border border-maroon/20 p-4 mb-4">
+                                <svg viewBox="0 0 420 210" class="w-full h-auto text-maroon" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Architectural line drawing of Kudzu Kart e-bike towed onigiri trailer">
+                                    <!-- Ground datum line -->
+                                    <line x1="16" y1="182" x2="404" y2="182" stroke="currentColor" stroke-width="2"/>
+                                    
+                                    <!-- Centered Bike & Trailer Assembly -->
+                                    <g transform="translate(-26, 0)">
+                                        <!-- Food Cart Trailer Body (1/3 shorter, aligned with hitch at x=200) -->
+                                        <rect x="89" y="64" width="111" height="90" rx="6" fill="#B0C0DE" stroke="currentColor" stroke-width="2.2"/>
+                                        <!-- Awning / Canopy -->
+                                        <path d="M81 64H208L198 44H91L81 64Z" fill="#EDE6B9" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+                                        <!-- Service Window (centered on trailer x=89..200 -> center 144.5) -->
+                                        <rect x="112.5" y="80" width="64" height="44" rx="3" fill="#FAF7F0" stroke="currentColor" stroke-width="1.8"/>
+                                        <!-- Kudzu Kart Circular Logo Emblem inside window (centered) -->
+                                        <g transform="translate(112.5, 70) scale(0.27)">
+                                            <g stroke="#8E3B58" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                                                <path d="M104 74 L116 96"/>
+                                                <path d="M126 68 L130 104"/>
+                                                <path d="M84 104 L106 104 L127 91 L130 144 C130 164, 114 174, 104 168 C96 164, 98 148, 98 134 L84 136 C78 137, 78 132, 84 126 L104 104"/>
+                                                <path d="M130 112 C156 108, 166 136, 132 148"/>
+                                                <path d="M111 117 C110 124, 116 125, 118 119" stroke-width="5"/>
+                                            </g>
+                                        </g>
+                                        <!-- Cart branding stripe -->
+                                        <line x1="89" y1="138" x2="200" y2="138" stroke="currentColor" stroke-width="1.8"/>
+                                        <!-- Trailer Wheel -->
+                                        <circle cx="144" cy="164" r="18" fill="#FAF7F0" stroke="currentColor" stroke-width="2.5"/>
+                                        <circle cx="144" cy="164" r="6" fill="currentColor"/>
+
+                                        <!-- Tow Hitch Bar -->
+                                        <path d="M200 148H248L264 164" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+
+                                        <!-- RadRunner 2 E-Bike (20" Fat Tires, Step-Through Frame, Banana Seat, BMX Bars) -->
+                                        <!-- Rear Fat Tire & Hub Motor -->
+                                        <circle cx="272" cy="160" r="22" fill="#FAF7F0" stroke="currentColor" stroke-width="4.5"/>
+                                        <circle cx="272" cy="160" r="7" fill="currentColor"/>
+
+                                        <!-- Front Fat Tire -->
+                                        <circle cx="370" cy="160" r="22" fill="#FAF7F0" stroke="currentColor" stroke-width="4.5"/>
+                                        <circle cx="370" cy="160" r="5" fill="currentColor"/>
+
+                                        <!-- Fenders -->
+                                        <path d="M249 156 A 24 24 0 0 1 294 148" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                        <path d="M348 148 A 24 24 0 0 1 392 154" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+
+                                        <!-- RadRunner 2 Step-Through Frame & Integrated Rear Rack -->
+                                        <!-- Rear Rack & Stay -->
+                                        <path d="M272 160 L308 158 L302 122 L254 122 L272 160" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <!-- Low Step-Through Down Tube & Head Tube -->
+                                        <path d="M308 158 C326 158, 336 146, 346 116" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+                                        <!-- Gusset Brace -->
+                                        <path d="M304 134 L342 124" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+                                        <!-- Front Fork -->
+                                        <path d="M344 112 L370 160" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/>
+
+                                        <!-- Vertical External Battery Pack Behind Seat Tube -->
+                                        <rect x="292" y="128" width="10" height="24" rx="2" transform="rotate(-10 292 128)" fill="#591C21"/>
+
+                                        <!-- Wide Moped-Style Banana Saddle -->
+                                        <rect x="252" y="113" width="50" height="8" rx="4" fill="#591C21"/>
+
+                                        <!-- Tall BMX-Style Risers & Grips -->
+                                        <path d="M344 112 L336 86 L346 86" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <!-- Round RadRunner Headlight -->
+                                        <rect x="348" y="114" width="7" height="8" rx="2" fill="#591C21"/>
+                                        <path d="M356 116 L364 114 M356 119 L364 121" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+
+                                        <!-- Crankset & Pedal -->
+                                        <circle cx="310" cy="158" r="5" fill="#FAF7F0" stroke="currentColor" stroke-width="2"/>
+                                        <path d="M310 158 L316 167 H321" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="grid grid-cols-3 gap-2 text-center font-mono">
+                                <div class="bg-paper/80 rounded-lg p-2.5 border border-maroon/15">
+                                    <span class="block text-[10px] uppercase text-maroon/65">Menu</span>
+                                    <span class="font-bold text-sm">5 Onigiri <br> (4 savory + 1 sweet)</span>
+                                </div>
+                                <div class="bg-paper/80 rounded-lg p-2.5 border border-maroon/15">
+                                    <span class="block text-[10px] uppercase text-maroon/65">Combos</span>
+                                    <span class="font-bold text-sm">$11 / $14 <br> (save $1-$4)</span>
+                                </div>
+                                <div class="bg-paper/80 rounded-lg p-2.5 border border-maroon/15">
+                                    <span class="block text-[10px] uppercase text-maroon/65">Gluten</span>
+                                    <span class="font-bold text-sm">0.0% <br> (celiac safe)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================================
+             2. MENU & LUNCH BOX COMBO SECTION
+        ====================================================================== -->
+        <section id="menu" class="py-14 sm:py-20 border-b border-maroon/20">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                
+                <!-- Section Header + Interactive Dietary & Allergen Controls -->
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+                    <div>
+                        <span class="font-mono text-xs uppercase tracking-widest text-maroon/70 block mb-2">01 // Daily Rotation &amp; Combos</span>
+                        <h2 class="font-display font-bold text-3xl sm:text-4xl tracking-tight text-maroon">
+                            Hand-Pressed Onigiri &amp; Lunch Boxes
+                        </h2>
+                        <p class="text-sm sm:text-base text-maroon/80 mt-2 max-w-2xl">
+                            Every triangle is formed to order with seasoned Japanese short-grain rice, toasted nori, and house-made fillings. All items are <strong>100% Plant-Based &amp; Gluten-Free</strong>.
+                        </p>
+                    </div>
+
+                    <!-- Interactive Allergen Filter & Expand All Button -->
+                    <div class="flex flex-wrap items-center gap-2">
+                        <button type="button" id="toggle-all-allergens" class="font-mono text-xs uppercase tracking-wider px-3.5 py-2.5 rounded-lg bg-butter border border-maroon text-maroon hover:bg-butter-dark transition-colors flex items-center gap-2">
+                            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>
+                            </svg>
+                            <span id="toggle-all-label">Show All Allergens</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Allergen Filter Bar -->
+                <div class="mb-8 p-3.5 rounded-xl bg-butter-soft border border-maroon/20 flex flex-wrap items-center justify-between gap-3">
+                    <div class="flex flex-wrap items-center gap-2">
+                        <span class="font-mono text-[11px] uppercase tracking-wider text-maroon/70 mr-1">Filter by avoidance:</span>
+                        <button type="button" data-filter="all" class="filter-btn active font-mono text-xs px-3 py-1.5 rounded-lg border border-maroon bg-maroon text-butter transition-colors">
+                            All 5 Flavors
+                        </button>
+                        <button type="button" data-filter="soy-free" class="filter-btn font-mono text-xs px-3 py-1.5 rounded-lg border border-maroon/30 bg-paper text-maroon hover:border-maroon transition-colors">
+                            Soy-Free Only
+                        </button>
+                        <button type="button" data-filter="sesame-free" class="filter-btn font-mono text-xs px-3 py-1.5 rounded-lg border border-maroon/30 bg-paper text-maroon hover:border-maroon transition-colors">
+                            Sesame-Free Only
+                        </button>
+                    </div>
+                    <div class="flex items-center gap-2 font-mono text-[11px] text-maroon/80">
+                        <span class="px-2 py-0.5 rounded bg-robin/70 border border-maroon/20 font-semibold">GF</span>
+                        <span>Dedicated Gluten-Free Prep</span>
+                        <span class="px-2 py-0.5 rounded bg-butter border border-maroon/20 font-semibold">PB</span>
+                        <span>100% Plant-Based</span>
+                    </div>
+                </div>
+
+                <!-- 5 Signature Onigiri Interactive Menu Cards -->
+                <div id="onigiri-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
+                    <!-- Rendered dynamically via vanilla JS for clean interactivity -->
+                </div>
+
+                <!-- Lunch Box Combos & Canned Drinks Grid -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+                    
+                    <!-- Lunch Box Combos Architectural Card (7 cols) -->
+                    <div class="lg:col-span-7 rounded-2xl bg-maroon text-butter p-6 sm:p-8 border border-maroon arch-shadow-robin flex flex-col justify-between">
+                        <div>
+                            <div class="flex flex-wrap items-center justify-between gap-2 pb-4 border-b border-butter/20">
+                                <span class="font-mono text-xs uppercase tracking-widest text-robin">Value Combos</span>
+                                <span class="font-mono text-[11px] uppercase tracking-wider px-2.5 py-0.5 rounded bg-butter/15 text-butter">
+                                    100% GF &amp; Plant-Based
+                                </span>
+                            </div>
+
+                            <h3 class="font-display font-bold text-2xl sm:text-3xl mt-4 text-butter">
+                                Lunch Box Combos
+                            </h3>
+                            <p class="text-sm text-butter/80 mt-1">
+                                Built for park benches, brewery patios, and midday Englewood lunch breaks.
+                            </p>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                                <!-- $11 Lunch Box Combo -->
+                                <div class="rounded-xl bg-maroon-dark/90 border border-butter/25 p-5 flex flex-col justify-between">
+                                    <div>
+                                        <div class="flex items-baseline justify-between gap-2">
+                                            <h4 class="font-display font-bold text-lg text-butter">Lunch Box Combo</h4>
+                                            <span class="font-mono font-bold text-2xl text-robin">$11</span>
+                                        </div>
+                                        <p class="text-xs sm:text-sm text-butter/85 mt-2 leading-relaxed">
+                                            Any <strong>2 onigiri</strong> of your choice paired with a <strong>chilled canned drink</strong> and house pickled cucumber sunomono.
+                                        </p>
+                                    </div>
+                                    <div class="mt-4 pt-3 border-t border-butter/15 font-mono text-[11px] text-robin/90">
+                                        +$1 if selecting Faux-Strami or Yuzu Spindrift
+                                    </div>
+                                </div>
+
+                                <!-- $14 Any 3 Combo -->
+                                <div class="rounded-xl bg-butter text-maroon border border-butter p-5 flex flex-col justify-between">
+                                    <div>
+                                        <div class="flex items-baseline justify-between gap-2">
+                                            <h4 class="font-display font-bold text-lg text-maroon">Any 3 Combo</h4>
+                                            <span class="font-mono font-bold text-2xl text-maroon">$14</span>
+                                        </div>
+                                        <p class="text-xs sm:text-sm text-maroon/85 mt-2 leading-relaxed">
+                                            Pick <strong>any 3 onigiri</strong> across the entire menu—including Faux-Strami—packed in a compostable bento box.
+                                        </p>
+                                    </div>
+                                    <div class="mt-4 pt-3 border-t border-maroon/15 font-mono text-[11px] font-semibold text-maroon">
+                                        Save up to $2 • Mix &amp; Match
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Quick Combo Estimator -->
+                        <div class="mt-6 pt-5 border-t border-butter/20 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                            <span class="font-mono text-xs text-butter/80">
+                                Need a custom box for the team?
+                            </span>
+                            <a href="#about" class="inline-flex items-center justify-center font-mono text-xs uppercase tracking-wider px-4 py-2 rounded-lg bg-robin text-maroon font-semibold hover:bg-robin-dark transition-colors">
+                                Pre-Order 10+ Boxes →
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cold Canned Drinks Card (5 cols) -->
+                    <div class="lg:col-span-5 rounded-2xl bg-robin-light border border-maroon p-6 sm:p-8 arch-shadow flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between pb-4 border-b border-maroon/20">
+                                <span class="font-mono text-xs uppercase tracking-widest text-maroon/75">Cold Cooler</span>
+                                <span class="font-mono text-xs font-semibold text-maroon">$2 – $3</span>
+                            </div>
+
+                            <h3 class="font-display font-bold text-2xl mt-4 text-maroon">
+                                Canned Drinks
+                            </h3>
+                            <p class="text-sm text-maroon/80 mt-1">
+                                Ice-cold refreshment pulled straight from our insulated e-cart cooler.
+                            </p>
+
+                            <ul class="mt-6 space-y-3.5">
+                                <!-- Drink 1 -->
+                                <li class="p-3.5 rounded-xl bg-paper border border-maroon/20 flex items-center justify-between gap-3">
+                                    <div>
+                                        <span class="font-display font-bold text-base text-maroon block">Arnold Palmer LITE</span>
+                                        <span class="font-mono text-[11px] text-maroon/70">Half iced tea, half lemonade • GF / Vegan</span>
+                                    </div>
+                                    <span class="font-mono font-bold text-base px-2.5 py-1 rounded bg-butter border border-maroon/20">$2</span>
+                                </li>
+
+                                <!-- Drink 2 -->
+                                <li class="p-3.5 rounded-xl bg-paper border border-maroon/20 flex items-center justify-between gap-3">
+                                    <div>
+                                        <span class="font-display font-bold text-base text-maroon block">Barq's Root Beer</span>
+                                        <span class="font-mono text-[11px] text-maroon/70">Classic crisp bite • GF / Vegan</span>
+                                    </div>
+                                    <span class="font-mono font-bold text-base px-2.5 py-1 rounded bg-butter border border-maroon/20">$2</span>
+                                </li>
+
+                                <!-- Drink 3 -->
+                                <li class="p-3.5 rounded-xl bg-paper border border-maroon/20 flex items-center justify-between gap-3">
+                                    <div>
+                                        <span class="font-display font-bold text-base text-maroon block">Yuzu Spindrift</span>
+                                        <span class="font-mono text-[11px] text-maroon/70">Sparkling water + real squeezed yuzu • GF / Vegan</span>
+                                    </div>
+                                    <span class="font-mono font-bold text-base px-2.5 py-1 rounded bg-robin border border-maroon/20">$3</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <p class="mt-5 font-mono text-[11px] text-maroon/70">
+                            * All canned beverages are certified gluten-free and free of animal products.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================================
+             3. WEEKLY MARKET & POP-UP SCHEDULE SECTION
+        ====================================================================== -->
+        <section id="schedule" class="py-14 sm:py-20 bg-butter-soft border-b border-maroon/20">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+                    <div>
+                        <span class="font-mono text-xs uppercase tracking-widest text-maroon/70 block mb-2">02 // Weekly Route</span>
+                        <h2 class="font-display font-bold text-3xl sm:text-4xl tracking-tight text-maroon">
+                            Market &amp; Pop-Up Schedule
+                        </h2>
+                        <p class="text-sm sm:text-base text-maroon/80 mt-2 max-w-xl">
+                            Our e-bike operates within a 4-mile radius of Downtown Englewood. Today's active stop is highlighted automatically.
+                        </p>
+                    </div>
+                    <div class="font-mono text-xs text-maroon/80 bg-paper px-3.5 py-2 rounded-lg border border-maroon/20">
+                        Weather-dependent e-bike dispatch • Updates 8:00 AM daily
+                    </div>
+                </div>
+
+                <!-- Clean Architectural Weekly Calendar Grid -->
+                <div id="weekly-schedule-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-3">
+                    <!-- Rendered dynamically via vanilla JS to sync with current day of week -->
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================================
+             4. ABOUT KUDZU KART & CATERING / INQUIRY SECTION
+        ====================================================================== -->
+        <section id="about" class="py-14 sm:py-20">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+                    
+                    <!-- Story Column (7 cols) -->
+                    <div class="lg:col-span-7 space-y-5">
+                        <span class="font-mono text-xs uppercase tracking-widest text-maroon/70 block">03 // Origin &amp; Craft</span>
+                        <h2 class="font-display font-bold text-3xl sm:text-4xl tracking-tight text-maroon leading-tight">
+                            Pedal-Powered Comfort Food for the Front Range.
+                        </h2>
+                        
+                        <div class="space-y-4 text-sm sm:text-base text-maroon/85 leading-relaxed">
+                            <p>
+                                Named after the resilient, fast-growing vine of the American South and rooted in the Japanese tradition of portable rice balls, <strong>Kudzu Kart</strong> started with a simple blueprint: build an ultra-low-footprint street food cart towed entirely by an electric cargo bike in Englewood, Colorado.
+                            </p>
+                            <p>
+                                Instead of generators, propane tanks, and idling trucks, we use high-efficiency insulated thermal wells and pedal-assisted transport to bring warm, freshly pressed onigiri directly to neighborhood markets, parks, and taprooms.
+                            </p>
+                            <p>
+                                Because Celiac-safe, plant-based street food shouldn't feel like an afterthought, our entire prep commissary is <strong>100% gluten-free and 100% plant-based</strong>—zero cross-contamination, just crisp nori, seasoned short-grain rice, and bold, nostalgic fillings.
+                            </p>
+                        </div>
+
+                        <!-- Architectural Key Specs Row -->
+                        <div class="grid grid-cols-3 gap-4 pt-4 border-t border-maroon/20">
+                            <div>
+                                <span class="font-display font-bold text-2xl sm:text-3xl text-maroon block">0 g</span>
+                                <span class="font-mono text-[11px] uppercase tracking-wider text-maroon/70">Tailpipe Emissions</span>
+                            </div>
+                            <div>
+                                <span class="font-display font-bold text-2xl sm:text-3xl text-maroon block">100%</span>
+                                <span class="font-mono text-[11px] uppercase tracking-wider text-maroon/70">Gluten-Free Kitchen</span>
+                            </div>
+                            <div>
+                                <span class="font-display font-bold text-2xl sm:text-3xl text-maroon block">80110</span>
+                                <span class="font-mono text-[11px] uppercase tracking-wider text-maroon/70">Englewood Built</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Catering & Direct Contact Column (5 cols) -->
+                    <div class="lg:col-span-5">
+                        <div class="rounded-2xl bg-butter border border-maroon p-6 sm:p-8 arch-shadow">
+                            <span class="font-mono text-xs uppercase tracking-widest text-maroon/75 block mb-2">
+                                Private Pop-Ups &amp; Drop-Offs
+                            </span>
+                            <h3 class="font-display font-bold text-2xl text-maroon">
+                                Catering &amp; Inquiries
+                            </h3>
+                            <p class="text-sm text-maroon/85 mt-2 leading-relaxed">
+                                Hosting a studio lunch, taproom event, or backyard gathering in Englewood or South Denver? Book the Kudzu Kart e-bike trailer or order 15+ boxed Lunch Combos.
+                            </p>
+
+                            <ul class="mt-5 space-y-2.5 font-mono text-xs text-maroon/90 border-y border-maroon/15 py-4">
+                                <li class="flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-maroon"></span>
+                                    <span>Office &amp; Studio Onigiri Platters (15–100 guests)</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-maroon"></span>
+                                    <span>On-Site E-Bike Kart Pop-Ups (Flat patio access)</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-maroon"></span>
+                                    <span>Allergy-friendly group lunch boxes</span>
+                                </li>
+                            </ul>
+
+                            <!-- Direct Contact Links + One-Click Copy Email -->
+                            <div class="mt-6 space-y-3">
+                                <a href="mailto:kdzukrt@gmail.com?subject=Kudzu%20Kart%20Catering%20%2F%20Pop-Up%20Inquiry" class="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-maroon text-butter font-mono text-xs sm:text-sm uppercase tracking-wider font-semibold hover:bg-maroon-dark transition-colors">
+                                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                    <span>Email kdzukrt@gmail.com</span>
+                                </a>
+
+                                <button type="button" id="copy-email-btn" class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-paper text-maroon border border-maroon font-mono text-xs uppercase tracking-wider hover:bg-robin transition-colors">
+                                    <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                                    </svg>
+                                    <span id="copy-email-text">Copy Email Address</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Minimalist Architectural Footer -->
+    <footer class="bg-maroon text-butter border-t border-maroon py-10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+            <div class="flex items-center gap-3.5">
+                <div class="w-11 h-11 rounded-full overflow-hidden shrink-0">
+                    <svg viewBox="0 0 240 240" class="w-full h-full" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kudzu Kart Logo">
+                        <circle cx="120" cy="120" r="113" fill="#B0C0DE" stroke="#8E3B58" stroke-width="7"/>
+                        <g stroke="#8E3B58" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                            <path d="M32 76 L51 96 M40 85 L44 63 M41 84 L63 81"/>
+                            <path d="M65 46 C67 62, 79 68, 89 58 C95 52, 92 39, 87 30"/>
+                            <path d="M113 21 L115 51 M113 21 C133 19, 141 35, 115 51"/>
+                            <path d="M155 29 L183 41 L153 56 L179 68"/>
+                            <path d="M201 70 C186 78, 181 89, 188 97 C195 104, 206 99, 216 93"/>
+                        </g>
+                        <g stroke="#8E3B58" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                            <path d="M104 74 L116 96"/>
+                            <path d="M126 68 L130 104"/>
+                            <path d="M84 104 L106 104 L127 91 L130 144 C130 164, 114 174, 104 168 C96 164, 98 148, 98 134 L84 136 C78 137, 78 132, 84 126 L104 104"/>
+                            <path d="M130 112 C156 108, 166 136, 132 148"/>
+                            <path d="M111 117 C110 124, 116 125, 118 119" stroke-width="3.5"/>
+                        </g>
+                        <g stroke="#8E3B58" stroke-width="8.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                            <path d="M62 164 L47 187 M56 174 L78 180 M60 176 L58 197"/>
+                            <path d="M84 209 L103 187 L107 214 M91 202 L105 204"/>
+                            <path d="M126 190 L134 216 M126 190 C143 184, 150 196, 132 203 L149 212"/>
+                            <path d="M158 176 L181 161 M170 169 L185 192"/>
+                        </g>
+                    </svg>
+                </div>
+                <div>
+                    <span class="font-display font-bold text-lg uppercase tracking-tight block">Kudzu Kart</span>
+                    <span class="font-mono text-xs text-butter/75 block mt-1">
+                        E-Bike-Towed Plant-Based &amp; Gluten-Free Fusion Onigiri • Englewood, CO
+                    </span>
+                </div>
+            </div>
+            <div class="flex flex-wrap items-center gap-6 font-mono text-xs text-butter/85">
+                <a href="#menu" class="hover:text-robin transition-colors">Menu</a>
+                <a href="#schedule" class="hover:text-robin transition-colors">Schedule</a>
+                <a href="mailto:kdzukrt@gmail.com" class="hover:text-robin transition-colors">kdzukrt@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vanilla JavaScript: Menu Data, Allergen Controls, Live Market Status & Weekly Schedule -->
+    <script>
+        (function () {
+            'use strict';
+
+            // 1. MENU DATA (5 Signature Onigiri with exact prices, dietary badges & allergen details)
+            const ONIGIRI_MENU = [
+                {
+                    id: 'faux-strami',
+                    name: 'Faux-Strami',
+                    price: 6,
+                    featured: true,
+                    tagline: 'Deli-spiced smoked beet & shiitake pastrami',
+                    description: 'House-cured, hickory-smoked ruby beet and shiitake ribbons layered with whole-grain mustard aioli, dill pickle brine, and toasted caraway in warm sushi rice.',
+                    allergens: ['Mustard', 'Soy (GF Tamari)', 'Sesame'],
+                    soyFree: false,
+                    sesameFree: false,
+                    prepNote: '100% Gluten-Free & Plant-Based'
+                },
+                {
+                    id: 'mississippi-miso',
+                    name: 'Mississippi Miso',
+                    price: 5,
+                    featured: false,
+                    tagline: 'Sorghum-glazed white miso & charred scallion',
+                    description: 'Savory chickpea-and-soy white miso whipped with sweet Southern sorghum syrup, roasted garlic, and blistered green onions.',
+                    allergens: ['Soy (GF Miso)', 'Sesame'],
+                    soyFree: false,
+                    sesameFree: false,
+                    prepNote: '100% Gluten-Free & Plant-Based'
+                },
+                {
+                    id: 'gold-rush-beet',
+                    name: 'Gold Rush Beet',
+                    price: 5,
+                    featured: false,
+                    tagline: 'Roasted Colorado golden beets & yuzu-herb whip',
+                    description: 'Salt-roasted Front Range golden beets folded into creamy sunflower-seed yuzu crema, fresh dill, and cracked black pepper.',
+                    allergens: ['None (Top-9 Allergen Free)'],
+                    soyFree: true,
+                    sesameFree: true,
+                    prepNote: '100% Gluten-Free, Soy-Free, Nut-Free & Plant-Based'
+                },
+                {
+                    id: 'jacks-cookout',
+                    name: "Jack's Cookout",
+                    price: 5,
+                    featured: false,
+                    tagline: 'Smoky espresso-molasses pulled jackfruit',
+                    description: 'Slow-braised young green jackfruit tossed in house tangy tomato-molasses BBQ sauce with crisp apple-cabbage slaw.',
+                    allergens: ['Mustard'],
+                    soyFree: true,
+                    sesameFree: true,
+                    prepNote: '100% Gluten-Free, Soy-Free & Plant-Based'
+                },
+                {
+                    id: 'sweetheart-tofu',
+                    name: 'Sweetheart Tofu',
+                    price: 5,
+                    featured: false,
+                    tagline: 'Crispy chili-maple glazed organic tofu',
+                    description: 'Golden-seared non-GMO tofu cubes glazed in warm Colorado wildflower-style maple chili crisp and toasted black sesame.',
+                    allergens: ['Soy', 'Sesame'],
+                    soyFree: false,
+                    sesameFree: false,
+                    prepNote: '100% Gluten-Free & Plant-Based'
+                }
+            ];
+
+            // 2. WEEKLY MARKET & POP-UP SCHEDULE (Englewood, CO)
+            // Indexed 0 (Sunday) through 6 (Saturday) to match Date.prototype.getDay()
+            const WEEKLY_SCHEDULE = [
+                {
+                    dayIndex: 0,
+                    shortDay: 'SUN',
+                    fullDay: 'Sunday',
+                    location: 'South Pearl St. Farmers Market (South Gate)',
+                    neighborhood: 'Englewood / Platt Park Border',
+                    hours: '9:00 AM – 1:00 PM',
+                    active: true
+                },
+                {
+                    dayIndex: 1,
+                    shortDay: 'MON',
+                    fullDay: 'Monday',
+                    location: 'Commissary Prep & Battery Recharge',
+                    neighborhood: 'Englewood Kitchen',
+                    hours: 'Closed for Prep',
+                    active: false
+                },
+                {
+                    dayIndex: 2,
+                    shortDay: 'TUE',
+                    fullDay: 'Tuesday',
+                    location: 'Englewood Civic Center Plaza',
+                    neighborhood: '1000 Englewood Pkwy',
+                    hours: '11:00 AM – 2:00 PM',
+                    active: true
+                },
+                {
+                    dayIndex: 3,
+                    shortDay: 'WED',
+                    fullDay: 'Wednesday',
+                    location: 'Table Top Tap Patio Pop-Up',
+                    neighborhood: '3410 S Broadway, Englewood',
+                    hours: '4:30 PM – 8:00 PM',
+                    active: true
+                },
+                {
+                    dayIndex: 4,
+                    shortDay: 'THU',
+                    fullDay: 'Thursday',
+                    location: 'Bates-Logan Park Lunch Stop',
+                    neighborhood: '2998 S Logan St, Englewood',
+                    hours: '11:30 AM – 2:30 PM',
+                    active: true
+                },
+                {
+                    dayIndex: 5,
+                    shortDay: 'FRI',
+                    fullDay: 'Friday',
+                    location: 'Downtown Broadway Lunch & Art Walk',
+                    neighborhood: '3400 Block S Broadway',
+                    hours: '11:30 AM – 3:00 PM',
+                    active: true
+                },
+                {
+                    dayIndex: 6,
+                    shortDay: 'SAT',
+                    fullDay: 'Saturday',
+                    location: 'Englewood Neighborhood Farmers Market',
+                    neighborhood: 'CityCenter Englewood Plaza',
+                    hours: '9:30 AM – 1:30 PM',
+                    active: true
+                }
+            ];
+
+            let currentFilter = 'all';
+            let allAllergensExpanded = false;
+
+            // Render Menu Cards
+            function renderMenuCards() {
+                const grid = document.getElementById('onigiri-grid');
+                if (!grid) return;
+
+                const filteredItems = ONIGIRI_MENU.filter(item => {
+                    if (currentFilter === 'soy-free') return item.soyFree;
+                    if (currentFilter === 'sesame-free') return item.sesameFree;
+                    return true;
+                });
+
+                grid.innerHTML = filteredItems.map(item => {
+                    const cardBg = item.featured ? 'bg-butter-light' : 'bg-paper';
+                    const badgeHtml = item.featured
+                        ? `<span class="font-mono text-[10px] uppercase tracking-widest px-2 py-0.5 rounded bg-maroon text-butter">Signature</span>`
+                        : `<span class="font-mono text-[10px] uppercase tracking-widest px-2 py-0.5 rounded bg-robin/70 text-maroon">House Classic</span>`;
+
+                    const allergenTags = item.allergens.map(a => 
+                        `<span class="inline-block font-mono text-[11px] px-2 py-0.5 rounded bg-paper border border-maroon/25 text-maroon">${a}</span>`
+                    ).join(' ');
+
+                    return `
+                        <article class="rounded-2xl ${cardBg} border border-maroon p-5 sm:p-6 flex flex-col justify-between transition-transform duration-150 hover:-translate-y-0.5 arch-shadow-sm">
+                            <div>
+                                <!-- Top Row: Category Badge & Price -->
+                                <div class="flex items-center justify-between gap-2 mb-3">
+                                    <div class="flex items-center gap-1.5">
+                                        ${badgeHtml}
+                                        <span class="font-mono text-[10px] font-semibold px-1.5 py-0.5 rounded border border-maroon/30 text-maroon" title="100% Gluten-Free">GF</span>
+                                        <span class="font-mono text-[10px] font-semibold px-1.5 py-0.5 rounded border border-maroon/30 text-maroon" title="100% Plant-Based">PB</span>
+                                    </div>
+                                    <span class="font-mono font-bold text-xl text-maroon">$${item.price}</span>
+                                </div>
+
+                                <!-- Title & Subtitle -->
+                                <h3 class="font-display font-bold text-xl sm:text-2xl text-maroon tracking-tight">
+                                    ${item.name}
+                                </h3>
+                                <p class="font-mono text-xs text-maroon/75 mt-1">
+                                    ${item.tagline}
+                                </p>
+
+                                <!-- Flavor Description -->
+                                <p class="text-sm text-maroon/85 mt-3 leading-relaxed">
+                                    ${item.description}
+                                </p>
+                            </div>
+
+                            <!-- Interactive Allergen Toggle Drawer -->
+                            <div class="mt-5 pt-3.5 border-t border-maroon/15">
+                                <button 
+                                    type="button" 
+                                    class="allergen-toggle w-full flex items-center justify-between font-mono text-xs uppercase tracking-wider text-maroon/80 hover:text-maroon focus:outline-none"
+                                    aria-expanded="${allAllergensExpanded}"
+                                    data-target="drawer-${item.id}"
+                                >
+                                    <span>Allergen &amp; Prep Details</span>
+                                    <span class="toggle-icon font-bold text-sm leading-none">${allAllergensExpanded ? '−' : '+'}</span>
+                                </button>
+
+                                <div id="drawer-${item.id}" class="allergen-drawer ${allAllergensExpanded ? 'open' : ''}">
+                                    <div class="pt-3 space-y-2">
+                                        <div class="flex flex-wrap gap-1.5 items-center">
+                                            <span class="font-mono text-[10px] uppercase text-maroon/65">Contains:</span>
+                                            ${allergenTags}
+                                        </div>
+                                        <p class="font-mono text-[11px] text-maroon/75">
+                                            ✓ ${item.prepNote}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    `;
+                }).join('');
+
+                // Attach individual drawer toggle listeners
+                document.querySelectorAll('.allergen-toggle').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        const targetId = btn.getAttribute('data-target');
+                        const drawer = document.getElementById(targetId);
+                        const icon = btn.querySelector('.toggle-icon');
+                        if (!drawer) return;
+
+                        const isOpen = drawer.classList.toggle('open');
+                        btn.setAttribute('aria-expanded', String(isOpen));
+                        if (icon) icon.textContent = isOpen ? '−' : '+';
+                    });
+                });
+            }
+
+            // Render Weekly Schedule & Sync 'Find the Kart' Hero Status Banner
+            function renderScheduleAndHeroBanner() {
+                const todayIndex = new Date().getDay();
+                const todayEntry = WEEKLY_SCHEDULE.find(d => d.dayIndex === todayIndex) || WEEKLY_SCHEDULE[0];
+
+                // Update Hero 'Find the Kart' Banner
+                const dayLabel = document.getElementById('status-day-label');
+                const locText = document.getElementById('status-location-text');
+                const hoursText = document.getElementById('status-hours-text');
+                const statusDot = document.getElementById('status-dot');
+
+                if (dayLabel) dayLabel.textContent = `${todayEntry.fullDay} Dispatch`;
+                if (locText) {
+                    locText.textContent = todayEntry.active
+                        ? `${todayEntry.location} (${todayEntry.neighborhood})`
+                        : `${todayEntry.location} — Next pop-up: Tuesday at Englewood Civic Center`;
+                }
+                if (hoursText) hoursText.textContent = todayEntry.hours;
+                if (statusDot && !todayEntry.active) {
+                    statusDot.classList.remove('animate-live-dot');
+                    statusDot.classList.add('opacity-50');
+                }
+
+                // Render 7-Day Architectural Calendar Cards
+                const scheduleGrid = document.getElementById('weekly-schedule-grid');
+                if (!scheduleGrid) return;
+
+                // Order Monday -> Sunday for natural weekly calendar readability
+                const orderedDays = [
+                    WEEKLY_SCHEDULE[1], // Mon
+                    WEEKLY_SCHEDULE[2], // Tue
+                    WEEKLY_SCHEDULE[3], // Wed
+                    WEEKLY_SCHEDULE[4], // Thu
+                    WEEKLY_SCHEDULE[5], // Fri
+                    WEEKLY_SCHEDULE[6], // Sat
+                    WEEKLY_SCHEDULE[0]  // Sun
+                ];
+
+                scheduleGrid.innerHTML = orderedDays.map(day => {
+                    const isToday = day.dayIndex === todayIndex;
+                    const cardClasses = isToday
+                        ? 'bg-robin border-maroon arch-shadow-sm ring-1 ring-maroon'
+                        : day.active
+                            ? 'bg-paper border-maroon/25 hover:border-maroon'
+                            : 'bg-butter/40 border-maroon/15 opacity-75';
+
+                    return `
+                        <div class="rounded-xl border p-4 flex flex-col justify-between transition-colors ${cardClasses}">
+                            <div>
+                                <div class="flex items-center justify-between gap-1 pb-2.5 mb-2.5 border-b border-maroon/15">
+                                    <span class="font-mono font-bold text-xs uppercase tracking-widest text-maroon">${day.shortDay}</span>
+                                    ${isToday ? '<span class="font-mono text-[10px] uppercase px-1.5 py-0.5 rounded bg-maroon text-butter font-semibold">Today</span>' : ''}
+                                </div>
+                                <h3 class="font-display font-bold text-sm text-maroon leading-snug">
+                                    ${day.location}
+                                </h3>
+                                <p class="font-mono text-[11px] text-maroon/70 mt-1">
+                                    ${day.neighborhood}
+                                </p>
+                            </div>
+                            <div class="mt-4 pt-2.5 border-t border-maroon/10 font-mono text-[11px] font-semibold text-maroon">
+                                ${day.hours}
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+            }
+
+            // Initialize Interactive Filter Buttons & Copy Email Utility
+            function initControls() {
+                // Dietary Filter Buttons
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        currentFilter = btn.getAttribute('data-filter') || 'all';
+                        document.querySelectorAll('.filter-btn').forEach(b => {
+                            b.classList.remove('bg-maroon', 'text-butter', 'border-maroon');
+                            b.classList.add('bg-paper', 'text-maroon', 'border-maroon/30');
+                        });
+                        btn.classList.remove('bg-paper', 'text-maroon', 'border-maroon/30');
+                        btn.classList.add('bg-maroon', 'text-butter', 'border-maroon');
+                        renderMenuCards();
+                    });
+                });
+
+                // Expand/Collapse All Allergens Button
+                const toggleAllBtn = document.getElementById('toggle-all-allergens');
+                const toggleAllLabel = document.getElementById('toggle-all-label');
+                if (toggleAllBtn) {
+                    toggleAllBtn.addEventListener('click', () => {
+                        allAllergensExpanded = !allAllergensExpanded;
+                        if (toggleAllLabel) {
+                            toggleAllLabel.textContent = allAllergensExpanded ? 'Hide All Allergens' : 'Show All Allergens';
+                        }
+                        renderMenuCards();
+                    });
+                }
+
+                // Copy Email Utility (using execCommand fallback for sandbox compatibility)
+                const copyBtn = document.getElementById('copy-email-btn');
+                const copyText = document.getElementById('copy-email-text');
+                if (copyBtn && copyText) {
+                    copyBtn.addEventListener('click', () => {
+                        const email = 'kdzukrt@gmail.com';
+                        const tempInput = document.createElement('textarea');
+                        tempInput.value = email;
+                        tempInput.style.position = 'fixed';
+                        tempInput.style.opacity = '0';
+                        document.body.appendChild(tempInput);
+                        tempInput.select();
+                        try {
+                            document.execCommand('copy');
+                            copyText.textContent = 'Copied: kdzukrt@gmail.com';
+                            setTimeout(() => {
+                                copyText.textContent = 'Copy Email Address';
+                            }, 2500);
+                        } catch (err) {
+                            copyText.textContent = 'kdzukrt@gmail.com';
+                        }
+                        document.body.removeChild(tempInput);
+                    });
+                }
+            }
+
+            // Initialize page on DOM ready
+            document.addEventListener('DOMContentLoaded', () => {
+                renderMenuCards();
+                renderScheduleAndHeroBanner();
+                initControls();
+            });
+        })();
+    </script>
+</body>
+</html>
